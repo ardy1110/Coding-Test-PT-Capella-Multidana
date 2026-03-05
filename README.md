@@ -1,7 +1,6 @@
 # Coding Test - IT Department - PT Capella Multidana
 
-Sistem Pengajuan Kredit
-Internal tool untuk mencatat, melihat, dan memproses pengajuan kredit kendaraan & multiguna.
+Sistem Pengajuan Kredit 
 
 ## Tech Stack
 
@@ -16,9 +15,9 @@ Internal tool untuk mencatat, melihat, dan memproses pengajuan kredit kendaraan 
 
 ## Prasyarat
 
-Pastikan sudah terinstall di komputer kamu:
+Pastikan tool terinstall :
 
-- **Node.js** v18 atau lebih baru → [nodejs.org](https://nodejs.org)
+- **Node.js** v18 atau lebih baru 
 - **npm** (sudah included dengan Node.js)
 
 Cek versi:
