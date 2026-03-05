@@ -1,0 +1,27 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+enum StatusPengajuan {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+model Pengajuan {
+  id                Int             @id @default(autoincrement())
+  namaLengkap       String
+  tipePengajuan     String
+  nominalPengajuan  Float
+  tenor             Int
+  pendapatanBulanan Float
+  catatan           String?
+  tagihan           Int
+  status            StatusPengajuan
+  createdAt         DateTime        @default(now())
+}
