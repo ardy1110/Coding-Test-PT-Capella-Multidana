@@ -10,7 +10,7 @@ export interface Pengajuan {
   tenor: number;
   tagihan: number;
   pendapatanBulanan: number;
-  tanggalPengajuan: string;
+  createdAt: string;
   status: 'APPROVED' | 'PENDING' | 'REJECTED' | string;
   catatan?: string;
 }

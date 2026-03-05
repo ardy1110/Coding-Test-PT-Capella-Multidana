@@ -1,4 +1,3 @@
-// TabelPengajuan.tsx
 import { useDaftarPengajuan } from "../hooks/useTabelPengajuan";
 import { formatRupiah } from "../utils/format";
 import { ConfirmModal, DetailModal } from "./Modal";
@@ -125,14 +124,15 @@ export default function TabelPengajuan({
                     "Nominal",
                     "Tenor",
                     "Tagihan/Bln",
+                    "Tanggal",
                     "Status",
                     "Aksi",
-                  ].map((h, i) => (
+                  ].map((h) => (
                     <th
                       key={h}
-                      className={`px-4 py-3 text-xs font-semibold uppercase tracking-widest text-gray-700 
-   ${i === 6 ? "text-center w-55" : "text-left"}
-    ${i === 0 ? "pl-7" : ""}`}
+                      className={`px-4 py-3 text-xs font-semibold uppercase tracking-widest text-gray-700
+      ${h === "Aksi" ? "text-center" : "text-left"}
+      ${h === "Nama" ? "pl-7" : ""}`}
                     >
                       {h}
                     </th>
@@ -161,6 +161,9 @@ export default function TabelPengajuan({
                     </td>
                     <td className="px-4 py-3.5 font-mono font-semibold text-black whitespace-nowrap">
                       {formatRupiah(item.tagihan)}
+                    </td>
+                    <td className="px-4 py-3.5 text-gray-500 whitespace-nowrap">
+                      {new Date(item.createdAt).toLocaleDateString("id-ID")}
                     </td>
                     <td className="px-4 py-3.5 whitespace-nowrap">
                       <span
