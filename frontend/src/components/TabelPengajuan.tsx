@@ -131,7 +131,7 @@ export default function TabelPengajuan({
                     <th
                       key={h}
                       className={`px-4 py-3 text-xs font-semibold uppercase tracking-widest text-gray-700
-      ${h === "Aksi" ? "text-center" : "text-left"}
+      ${h === "Aksi" ? "text-center w-55" : "text-left"}
       ${h === "Nama" ? "pl-7" : ""}`}
                     >
                       {h}
