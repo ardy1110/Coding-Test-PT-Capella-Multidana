@@ -90,9 +90,9 @@ npm install
 npm run dev
 ```
 
-Frontend berjalan di: **http://localhost:3000**
+Frontend berjalan di: **http://localhost:5173**
 
-Buka browser dan akses **http://localhost:3000**.
+Buka browser dan akses **http://localhost:5173**.
 
 ---
 
